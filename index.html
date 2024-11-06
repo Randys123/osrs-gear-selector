@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSRS Gear Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OSRS Gear Selector</h1>
+
+        <!-- Gear Selection Form -->
+        <div id="gear-selection">
+            <label for="slot">Select Gear Slot:</label>
+            <select id="slot" onchange="updateGearOptions()">
+                <option value="helmet">Helmet</option>
+                <option value="chest">Chestplate</option>
+                <option value="legs">Leggings</option>
+                <option value="weapon">Weapon</option>
+                <option value="shield">Shield</option>
+                <!-- Add more gear types as needed -->
+            </select>
+
+            <label for="gear-item">Select Gear Item:</label>
+            <select id="gear-item">
+                <!-- Gear options will be dynamically added here -->
+            </select>
+        </div>
+
+        <div id="gear-preview">
+            <h2>Selected Gear:</h2>
+            <p id="gear-info">Please select a gear slot and item.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
