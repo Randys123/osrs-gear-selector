@@ -1,39 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSRS Gear Selector</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>OSRS Gear Selector</h1>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
 
-        <!-- Gear Selection Form -->
-        <div id="gear-selection">
-            <label for="slot">Select Gear Slot:</label>
-            <select id="slot" onchange="updateGearOptions()">
-                <option value="helmet">Helmet</option>
-                <option value="chest">Chestplate</option>
-                <option value="legs">Leggings</option>
-                <option value="weapon">Weapon</option>
-                <option value="shield">Shield</option>
-                <!-- Add more gear types as needed -->
-            </select>
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-            <label for="gear-item">Select Gear Item:</label>
-            <select id="gear-item">
-                <!-- Gear options will be dynamically added here -->
-            </select>
-        </div>
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
 
-        <div id="gear-preview">
-            <h2>Selected Gear:</h2>
-            <p id="gear-info">Please select a gear slot and item.</p>
-        </div>
-    </div>
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1rem;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+select {
+    padding: 8px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#gear-preview {
+    margin-top: 30px;
+}
+
+#gear-info {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
