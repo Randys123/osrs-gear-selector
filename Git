@@ -1,0 +1,3 @@
+git add .
+git commit -m "Initial commit of OSRS gear selector"
+git push origin main
